@@ -1,0 +1,32 @@
+# Ignore Data folder
+/Data/*
+
+# Ignore all files in Data folder
+/Data/**/*
+
+# Ignore snap folder in P5 folder
+/P5/snap/*
+
+# ignore filename.ext file
+/filename.ext
+
+# Ignore all files in P5/notebooks/data
+
+/P5/notebooks/data/**/*
+
+# Ignore all files in P5/notebooks/filename.zip and p5data.zip
+/P5/notebooks/filename.zip
+/P5/notebooks/p5data.zip
+
+# ignore all files in P5/src/data
+/P5/src/data/**/*
+
+# ignore src/__pycache__ folder
+/P5/src/__pycache__/*
+
+#ignore P5/notebooks/__pycache__ folder
+/P5/notebooks/__pycache__/*
+
+Ignore filename.zip and p5 data.zip file in p5/src folder
+/P5/src/filename.zip
+/P5/src/p5data.zip
