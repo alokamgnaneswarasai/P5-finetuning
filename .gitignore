@@ -30,3 +30,7 @@
 Ignore filename.zip and p5 data.zip file in p5/src folder
 /P5/src/filename.zip
 /P5/src/p5data.zip
+
+
+# Ignore helper.txt file 
+# /helper.txt

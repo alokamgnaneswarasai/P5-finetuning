@@ -1,0 +1,32 @@
+wget --no-check-certificate 'https://drive.google.com/uc?id=1qGxgmx7G_WB7JE4Cn_bEcZ_o_NAJLE3G&export=download' -O data/p5data.zip (1 GB  data)
+
+wget --no-check-certificate 'https://drive.usercontent.google.com/download?id=1uE-_wpGmIiRLxaIy8wItMspOf5xRNF2O&export=download&authuser=0&confirm=t&uuid=24195748-7e30-42e5-bc08-e92b6b54049a&at=APZUnTXKtSbXicDFAn0V6jcIzQQ1:1715681593442' -O data/file_name ( 5GB data)
+
+
+du -h --max-depth=1 | sort -rh
+
+
+wget --no-check-certificate 'https://drive.usercontent.google.com/download?id=1uesez6E-q9WtS5VO07cXDoJDQz37oq0M&export=download&authuser=0&confirm=t&uuid=5d9aca7a-f817-48f2-a086-04d26916bb48&at=APZUnTW_2IOZ80zrS-PCV7kFrriB:1715745622855' 
+-O P5/snap/beauty-small-group5-part1.pth   ( check point for beauty-small-groups download)
+
+
+
+git procedure)
+1) git init(if there is already initlialized git then remove it first using git rm -rf(some thing like this)
+
+2) Now do git add .gitignore
+
+3) Then do git add -A
+
+4) then do git status and check whethere all the required files are staged or not
+
+5) Then do git commit
+
+6) Then do git push
+
+
+
+git checkout [BRANCH]   
+git branch master [BRANCH] -f   
+git checkout master   
+git push origin master -f
