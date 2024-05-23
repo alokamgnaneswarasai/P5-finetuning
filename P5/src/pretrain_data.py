@@ -320,6 +320,9 @@ class P5_Amazon_Dataset(Dataset):
                     title = self.meta_data[self.meta_dict[rating_datum['asin']]]['title']
                 else:
                     title = 'unknown title'
+                    
+                # print(f'title is {title}, user_desc = {user_desc}')
+                # print()
                 source_text = task_template['source'].format(user_desc, title)
                 target_text = task_template['target'].format(self.gaussian_sampling(rating_datum))
             else:
