@@ -34,3 +34,6 @@ Ignore filename.zip and p5 data.zip file in p5/src folder
 
 # Ignore helper.txt file 
 # /helper.txt
+
+# Dont ignore P5/notebooks/data/data-analysis.ipynb file
+!P5/notebooks/data/data-analysis.ipynb
