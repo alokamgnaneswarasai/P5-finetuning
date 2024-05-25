@@ -36,4 +36,10 @@ Ignore filename.zip and p5 data.zip file in p5/src folder
 # /helper.txt
 
 # Dont ignore P5/notebooks/data/data-analysis.ipynb file
-!P5/notebooks/data/data-analysis.ipynb
+!P5/notebooks/data/data-analysis.ipynb\
+
+# Ignore JulianMcAuley/goodreads_interactions.csv file and goodreads_books.json file
+/JulianMcAuley/goodreads_interactions.csv
+/JulianMcAuley/goodreads_books.json
+/JulianMcAuley/goodreads_interactions.pkl
+
