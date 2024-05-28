@@ -60,6 +60,8 @@ Ignore filename.zip and p5 data.zip file in p5/src folder
 /CaseRecommender/*.csv
 /CaseRecommender/*.dat
 
+# remove pycache files in all subfolders
+**/__pycache__/*
 
 
 
