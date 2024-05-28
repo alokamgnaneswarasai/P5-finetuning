@@ -46,4 +46,21 @@ Ignore filename.zip and p5 data.zip file in p5/src folder
 # Ignore all files in traditional model folder
 /traditional-model/**/*
 
+# Ignore files in CaseRecommender/data folder
+/CaseRecommender/data/**/*
+
+# Ignore files in CaseRecommender/fold folder
+/CaseRecommender/fold/**/*
+
+# Ignore all the .csv and .dat files in CaseRecommender folder even in subfolders
+/CaseRecommender/**/*.csv
+/CaseRecommender/**/*.dat
+
+# Ignore .csv and .data file in CaseRecommender folder
+/CaseRecommender/*.csv
+/CaseRecommender/*.dat
+
+
+
+
 
