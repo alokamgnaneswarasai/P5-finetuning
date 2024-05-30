@@ -43,6 +43,15 @@ Ignore filename.zip and p5 data.zip file in p5/src folder
 /JulianMcAuley/goodreads_books.json
 /JulianMcAuley/goodreads_interactions.pkl
 
+# Ignore files in JulianMcAuley/good_reads folder where .csv ,.json and .pkl,.txt files are present
+/JulianMcAuley/good_reads/**/*.csv
+/JulianMcAuley/good_reads/**/*.json
+/JulianMcAuley/good_reads/**/*.pkl
+/JulianMcAuley/good_reads/**/*.txt
+/JulianMcAuley/good_reads/**/*.dat
+/JulianMcAuley/good_reads/**/*.zip
+
+
 # Ignore all files in traditional model folder
 /traditional-model/**/*
 
