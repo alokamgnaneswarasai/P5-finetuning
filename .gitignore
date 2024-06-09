@@ -1,7 +1,93 @@
-# Ignore Data folder
-/Data/*
+# # Ignore Data folder
+# /Data/*
 
-# Ignore all files in Data folder
+# # Ignore all files in Data folder
+# /Data/**/*
+
+# # Ignore snap folder in P5 folder
+# /P5/snap/*
+
+# # ignore filename.ext file
+# /filename.ext
+
+# # Ignore all files in P5/notebooks/data
+
+# /P5/notebooks/data/**/*
+
+# # Ignore all files in P5/notebooks/filename.zip and p5data.zip
+# /P5/notebooks/filename.zip
+# /P5/notebooks/p5data.zip
+
+# # ignore all files in P5/src/data
+# /P5/src/data/**/*
+
+# # ignore src/__pycache__ folder
+# /P5/src/__pycache__/*
+
+# #ignore P5/notebooks/__pycache__ folder
+# /P5/notebooks/__pycache__/*
+
+# #Ignore filename.zip and p5 data.zip file in p5/src folder
+# /P5/src/filename.zip
+# /P5/src/p5data.zip
+
+
+# # Ignore helper.txt file 
+# # /helper.txt
+
+# # Dont ignore P5/notebooks/data/data-analysis.ipynb file
+# !P5/notebooks/data/data-analysis.ipynb\
+
+# # Ignore JulianMcAuley/goodreads_interactions.csv file and goodreads_books.json file
+# /JulianMcAuley/goodreads_interactions.csv
+# /JulianMcAuley/goodreads_books.json
+# /JulianMcAuley/goodreads_interactions.pkl
+
+# # Ignore files in JulianMcAuley/good_reads folder where .csv ,.json and .pkl,.txt files are present
+# /JulianMcAuley/good_reads/**/*.csv
+# /JulianMcAuley/good_reads/**/*.json
+# /JulianMcAuley/good_reads/**/*.pkl
+# /JulianMcAuley/good_reads/**/*.txt
+# /JulianMcAuley/good_reads/**/*.dat
+# /JulianMcAuley/good_reads/**/*.zip
+
+
+# # Ignore all files in traditional model folder
+# /traditional-model/**/*
+
+# # Ignore files in CaseRecommender/data folder
+# /CaseRecommender/data/**/*
+
+# # Ignore files in CaseRecommender/fold folder
+# /CaseRecommender/fold/**/*
+
+# # Ignore all the .csv and .dat files in CaseRecommender folder even in subfolders
+# /CaseRecommender/**/*.csv
+# /CaseRecommender/**/*.dat
+
+# # Ignore .csv and .data file in CaseRecommender folder
+# /CaseRecommender/*.csv
+# /CaseRecommender/*.dat
+
+# # remove pycache files in all subfolders
+# **/__pycache__/*
+
+# # Ignore all pkl files,csv files,.dat files in all  sub folders of P5 folder
+# /P5/**/*.pkl
+# /P5/**/*.csv
+# /P5/**/*.dat
+
+
+# **/*.pkl
+# **/*.csv # Ignore all csv files in all subfolders
+# **/*.dat # Ignore all dat files in all subfolders
+# **/*.zip # Ignore all zip files in all subfolders
+# **/*.txt # Ignore all txt files in all subfolders
+# **/*.json # Ignore all json files in all subfolders
+
+
+
+# Ignore Data folder
 /Data/**/*
 
 # Ignore snap folder in P5 folder
@@ -11,7 +97,6 @@
 /filename.ext
 
 # Ignore all files in P5/notebooks/data
-
 /P5/notebooks/data/**/*
 
 # Ignore all files in P5/notebooks/filename.zip and p5data.zip
@@ -20,17 +105,6 @@
 
 # ignore all files in P5/src/data
 /P5/src/data/**/*
-
-# ignore src/__pycache__ folder
-/P5/src/__pycache__/*
-
-#ignore P5/notebooks/__pycache__ folder
-/P5/notebooks/__pycache__/*
-
-Ignore filename.zip and p5 data.zip file in p5/src folder
-/P5/src/filename.zip
-/P5/src/p5data.zip
-
 
 # Ignore helper.txt file 
 # /helper.txt
@@ -43,15 +117,6 @@ Ignore filename.zip and p5 data.zip file in p5/src folder
 /JulianMcAuley/goodreads_books.json
 /JulianMcAuley/goodreads_interactions.pkl
 
-# Ignore files in JulianMcAuley/good_reads folder where .csv ,.json and .pkl,.txt files are present
-/JulianMcAuley/good_reads/**/*.csv
-/JulianMcAuley/good_reads/**/*.json
-/JulianMcAuley/good_reads/**/*.pkl
-/JulianMcAuley/good_reads/**/*.txt
-/JulianMcAuley/good_reads/**/*.dat
-/JulianMcAuley/good_reads/**/*.zip
-
-
 # Ignore all files in traditional model folder
 /traditional-model/**/*
 
@@ -61,16 +126,16 @@ Ignore filename.zip and p5 data.zip file in p5/src folder
 # Ignore files in CaseRecommender/fold folder
 /CaseRecommender/fold/**/*
 
-# Ignore all the .csv and .dat files in CaseRecommender folder even in subfolders
-/CaseRecommender/**/*.csv
-/CaseRecommender/**/*.dat
-
-# Ignore .csv and .data file in CaseRecommender folder
-/CaseRecommender/*.csv
-/CaseRecommender/*.dat
-
 # remove pycache files in all subfolders
 **/__pycache__/*
+
+# Ignore all pkl files, csv files, .dat files, .zip files, .txt files, .json files in all subfolders
+**/*.pkl
+**/*.csv
+**/*.dat
+**/*.zip
+**/*.txt
+**/*.json
 
 
 
