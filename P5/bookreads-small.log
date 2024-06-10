@@ -1,0 +1,57 @@
+P5/src/tokenization.py
+P5/src/tokenization.py
+Configurations
+{'adam_beta1': 0.9,
+ 'adam_beta2': 0.999,
+ 'adam_eps': 1e-06,
+ 'backbone': 't5-small',
+ 'batch_size': 32,
+ 'clip_grad_norm': 1.0,
+ 'comment': '',
+ 'distributed': True,
+ 'do_lower_case': False,
+ 'dropout': 0.1,
+ 'dry': False,
+ 'epoch': 10,
+ 'fp16': False,
+ 'from_scratch': False,
+ 'gen_max_length': 64,
+ 'gradient_accumulation_steps': 1,
+ 'load': None,
+ 'local_rank': 0,
+ 'log_train_accuracy': False,
+ 'losses': 'rating,sequential,explanation,review,traditional',
+ 'lr': 0.001,
+ 'max_text_length': 512,
+ 'multiGPU': True,
+ 'num_beams': 1,
+ 'num_workers': 4,
+ 'optim': 'adamw',
+ 'optimizer': 'adamw',
+ 'output': 'snap/bookreads-small',
+ 'seed': 2022,
+ 'submit': False,
+ 'test': None,
+ 'test_only': False,
+ 'tokenizer': 'p5',
+ 'train': 'bookreads',
+ 'valid': 'bookreads',
+ 'valid_batch_size': None,
+ 'warmup_ratio': 0.05,
+ 'weight_decay': 0.01,
+ 'whole_word_embed': True}
+P5/src/tokenization.py
+P5/src/tokenization.py
+['rating_loss', 'sequential_loss', 'explanation_loss', 'review_loss', 'traditional_loss']
+Process Launching at GPU 0
+Process Launching at GPU 2
+Process Launching at GPU 1
+Process Launching at GPU 3
+Building train loader at GPU 2
+Building train loader at GPU 0
+Building train loader at GPU 1
+Building train loader at GPU 3
+/raid/scratch/gnaneswaras/final_project/P5
+/raid/scratch/gnaneswaras/final_project/P5
+/raid/scratch/gnaneswaras/final_project/P5
+/raid/scratch/gnaneswaras/final_project/P5

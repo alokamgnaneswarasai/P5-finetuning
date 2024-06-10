@@ -7,6 +7,7 @@ import torch
 import pprint
 import yaml
 
+import os 
 
 def str2bool(v):
     if v.lower() in ('yes', 'true', 't', 'y', '1'):
@@ -73,7 +74,7 @@ def parse_args(parse=True, **optional_kwargs):
     parser.add_argument('--fp16', action='store_true')
     parser.add_argument("--distributed", action='store_true')
     parser.add_argument("--num_workers", default=0, type=int)
-    parser.add_argument('--local_rank', type=int, default=-1)
+    parser.add_argument('--local_rank', type=int, default=int(os.environ.get('LOCAL_RANK', 0)))
 
     # Model Config
     parser.add_argument('--backbone', type=str, default='t5-base')

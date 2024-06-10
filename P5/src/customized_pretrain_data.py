@@ -121,7 +121,10 @@ class P5_Bookreads_Dataset(Dataset):
         self.sample_type = sample_type
         
         # data directory is '../../JulianMcAuley/good_reads/goodreads_interactions.pkl'
-        data_dir = Path('../../JulianMcAuley/good_reads/goodreads_interactions.pkl')
+        
+        # print the current working directory
+        print(os.getcwd())
+        data_dir = Path('../JulianMcAuley/good_reads/goodreads_interactions.pkl')
         if self.mode == 'train':
             self.data = load_pickle(data_dir)['train']
         elif self.mode == 'val':
