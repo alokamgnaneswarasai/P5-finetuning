@@ -1,5 +1,7 @@
-P5/src/tokenization.py
-P5/src/tokenization.py
+P5/src/tokenization.pyP5/src/tokenization.pyP5/src/tokenization.pyP5/src/tokenization.py
+
+
+
 Configurations
 {'adam_beta1': 0.9,
  'adam_beta2': 0.999,
@@ -40,16 +42,14 @@ Configurations
  'warmup_ratio': 0.05,
  'weight_decay': 0.01,
  'whole_word_embed': True}
-P5/src/tokenization.py
-P5/src/tokenization.py
-['rating_loss', 'sequential_loss', 'explanation_loss', 'review_loss', 'traditional_loss']
-Process Launching at GPU 0
-Process Launching at GPU 2
 Process Launching at GPU 1
+Process Launching at GPU 2['rating_loss', 'sequential_loss', 'explanation_loss', 'review_loss', 'traditional_loss']
+
+Process Launching at GPU 0
 Process Launching at GPU 3
-Building train loader at GPU 2
-Building train loader at GPU 0
 Building train loader at GPU 1
+Building train loader at GPU 0
+Building train loader at GPU 2
 Building train loader at GPU 3
 /raid/scratch/gnaneswaras/final_project/P5
 /raid/scratch/gnaneswaras/final_project/P5
