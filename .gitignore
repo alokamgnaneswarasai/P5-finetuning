@@ -136,6 +136,19 @@
 **/*.zip
 **/*.txt
 **/*.json
+**/*.ckpt
+**/*.h5
+**/*.pth
+**/*.pt
+**/*.npy
+**/*.npz
+**/*.tar
+**/*.tar.gz
+**/*.tar.bz2
+**/*.tar.xz
+**/*.tar.Z
+**/*.tar.zst
+
 
 
 
