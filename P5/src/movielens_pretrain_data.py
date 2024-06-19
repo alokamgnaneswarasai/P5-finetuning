@@ -50,7 +50,8 @@ class P5_movielens_Dataset(Dataset):
         self.rating_augment = rating_augment
         self.sample_type = sample_type
         
-        data_dir = Path('../JulianMcAuley/movielens/ml-1m/sequential_recommendation_data.txt')
+        print(os.getcwd())
+        data_dir = Path('../../JulianMcAuley/movielens/ml-1m/sequential_recommendation_data.txt')
         self.sequential_data = ReadLineFromFile(data_dir)
         item_count = defaultdict(int)
         user_items = defaultdict()
@@ -77,7 +78,7 @@ class P5_movielens_Dataset(Dataset):
         curr  =0
         for key in list(self.task_list.keys()):
             if key =='sequential':
-                if sum([0<int(ind.split('_')[1])<=6 or int(ind.split('-')[1]) == 13 for ind in self.task_list[key]]):
+                if sum([0<int(ind.split('-')[1])<=6 or int(ind.split('-')[1]) == 13 for ind in self.task_list[key]]):
                     self.total_length += len(self.sequential_data)*self.sample_numbers[key][0]
                     for i in range(self.total_length-curr):
                         self.datum_info.append((i+curr,key,i//self.sample_numbers[key][0]))
@@ -94,8 +95,8 @@ class P5_movielens_Dataset(Dataset):
         assert index == datum_info_idx[0]
         
         if len(datum_info_idx) == 3:
-            task = datum_info_idx[1]
-            task_idx = datum_info_idx[2]
+            task_name = datum_info_idx[1]
+            datum_idx = datum_info_idx[2]
             
         elif len(datum_info_idx) == 4:
             task_name = datum_info_idx[1]
@@ -145,7 +146,16 @@ class P5_movielens_Dataset(Dataset):
                     source_text = task_template['source'].format(user_id,' -> '.join(purchase_history))
                     
                 target_text = task_template['target'].format(target_item)
-                
+               
+            elif task_template['id']=='2-3':
+                rand_prob = random.random()
+                if rand_prob > 0.5:
+                    source_text = task_template['source'].format(user_id,' , '.join(purchase_history))
+                    
+                else:
+                    source_text = task_template['source'].format(user_id,' -> '.join(purchase_history))
+                    
+                target_text = task_template['target'].format(target_item) 
             else:
                 raise NotImplementedError
             
