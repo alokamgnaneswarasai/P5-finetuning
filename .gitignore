@@ -148,6 +148,8 @@
 **/*.tar.xz
 **/*.tar.Z
 **/*.tar.zst
+**/*.bson
+
 
 
 
