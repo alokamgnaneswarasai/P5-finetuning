@@ -51,7 +51,9 @@ class P5_movielens_Dataset(Dataset):
         self.sample_type = sample_type
         
         print(os.getcwd())
-        data_dir = Path('../../JulianMcAuley/movielens/ml-1m/sequential_recommendation_data.txt')
+        
+        # data_dir = Path('../../JulianMcAuley/movielens/ml-1m/sequential_recommendation_data.txt')
+        data_dir = Path('../../JulianMcAuley/hetrec2011-delicious-2k/sequential_recommendation_data.txt')
         self.sequential_data = ReadLineFromFile(data_dir)
         item_count = defaultdict(int)
         user_items = defaultdict()
