@@ -53,7 +53,7 @@ class P5_movielens_Dataset(Dataset):
         print(os.getcwd())
         
         # data_dir = Path('../../JulianMcAuley/movielens/ml-1m/sequential_recommendation_data.txt')
-        data_dir = Path('../../JulianMcAuley/hetrec2011-delicious-2k/sequential_recommendation_data.txt')
+        data_dir = Path('../../JulianMcAuley/hetrec2011-delicious-2k/filtered_recommendation_data.txt')
         self.sequential_data = ReadLineFromFile(data_dir)
         item_count = defaultdict(int)
         user_items = defaultdict()
@@ -114,16 +114,35 @@ class P5_movielens_Dataset(Dataset):
             user_id = sequence[0]
             
             if self.mode =='train':
+                
+                # print("length of sequence",len(sequence))
                 end_candidates =[_ for _ in range(max(2,len(sequence)-6),len(sequence)-3)]
-                end_index = random.randint(0,len(end_candidates)-1)
+                
+                # print("started at",len(end_candidates))
+                if len(end_candidates) == 0 or len(end_candidates) == 1:
+   
+                    end_index = 0  
+                else:
+                    end_index = random.randint(0, len(end_candidates)-1)
+                
                 end_pos = end_candidates[end_index]
-                start_candidates = [_ for _ in range(11,min(4,end_pos))]
-                start_index = random.randint(0,len(start_candidates)-1)
+                
+                
+                start_candidates = [_ for _ in range(1,min(4,end_pos))]
+                
+                # print("ended at",len(start_candidates))
+                
+                if len(start_candidates)==0 or len(start_candidates)==1:
+                    start_index = 0
+                    
+                else:
+                      
+                    start_index = random.randint(0,len(start_candidates)-1)
                 start_pos = start_candidates[start_index]
                 purchase_history = sequence[start_pos:end_pos+1]
                 target_item = sequence[end_pos+1]
                 
-            elif self.mode == 'valid':
+            elif self.mode == 'val':
                 purchase_history = sequence[1:-2]
                 target_item = sequence[-2]
                 
